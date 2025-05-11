@@ -1,0 +1,13 @@
+.task-columns {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .task-column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    background: #f9f9f9;
+  }
+  

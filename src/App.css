@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+ 
+}
+:root {
+  --navbar-bg: #4CAF50;
+  --navbar-text: white;
+  --navbar-hover: rgba(255, 255, 255, 0.1);
+  --body-bg: #ffffff;
+  --text-color: #333333;
+  --task-column-bg: #f9f9f9;
+  --border-color: #ccc;
+  --status-pendente-bg: #ffebee;
+  --status-pendente-text: #c62828;
+  --status-progresso-bg: #e3f2fd;
+  --status-progresso-text: #1565c0;
+  --status-concluida-bg: #e8f5e9;
+  --status-concluida-text: #2e7d32;
+  --input-bg: #ffffff;
+  --input-text: #333333;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --navbar-bg: #1a1a1a;
+  --navbar-text: #f0f0f0;
+  --navbar-hover: rgba(255, 255, 255, 0.2);
+  --body-bg: #1a1a1a;
+  --text-color: #f0f0f0;
+  --task-column-bg: #2b2b2b;
+  --border-color: #404040;
+  --status-pendente-bg: #330000;
+  --status-pendente-text: #ff6666;
+  --status-progresso-bg: #002233;
+  --status-progresso-text: #66b3ff;
+  --status-concluida-bg: #003300;
+  --status-concluida-text: #66ff66;
+  --input-bg: #333333;
+  --input-text: #f0f0f0;
+}
+
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.task-column {
+  background: var(--task-column-bg);
+  border-color: var(--border-color);
+}
+
+.task-status-pendente {
+  background-color: var(--status-pendente-bg) !important;
+  color: var(--status-pendente-text);
+}
+
+.task-status-progresso {
+  background-color: var(--status-progresso-bg) !important;
+  color: var(--status-progresso-text);
+}
+
+.task-status-concluida {
+  background-color: var(--status-concluida-bg) !important;
+  color: var(--status-concluida-text);
+}
+
+.task-columns {
+  display: flex;
+  gap: 16px;
+}
+
+.task-column {
+  background: var(--task-column-bg);
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.task-columns > .task-column:first-child {
+  border-left: none; /* remove a borda da esquerda */
+}
+
+.task-columns > .task-column:last-child {
+  border-right: none; /* opcional: remove da direita se for visualmente necessário */
+}
+
+.task-item:active {
+  cursor: grabbing;
+}
+
+.task-view-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.task-view-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+input,
+textarea,
+select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.3);
+}
