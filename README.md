@@ -1,12 +1,28 @@
-# React + Vite
+Descrição
+Este é um projeto desenvolvido em React com o objetivo principal de entender e aplicar o React Router de forma eficaz, além de criar uma aplicação com funcionalidades úteis para o dia a dia. O projeto foi baseado em experiências reais, proporcionando uma interface amigável e fácil de usar, com recursos que melhoram a experiência do usuário, como o modo claro/escuro.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Objetivos do Projeto
+Aprender React Router: O foco principal deste projeto é entender como utilizar o React Router para gerenciar as rotas e a navegação entre diferentes páginas dentro da aplicação.
 
-Currently, two official plugins are available:
+Aplicações do mundo real: A ideia do projeto é criar uma aplicação que resolva problemas do cotidiano, oferecendo utilidades práticas como a gestão de tarefas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Facilidade de uso: A aplicação é construída com uma interface amigável e intuitiva, focando na experiência do usuário. O projeto inclui recursos como o modo claro/escuro para maior conforto durante o uso.
 
-## Expanding the ESLint configuration
+Funcionalidades
+Gerenciamento de Tarefas: Adicione, edite e remova tarefas de maneira fácil e intuitiva.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Modo Claro/Escuro: Alterne entre os modos claro e escuro para melhorar a visualização em diferentes condições de iluminação.
+
+React Router: Navegação simples entre as páginas de tarefas, metas e gráficos, com o uso do React Router para gerenciar as rotas.
+
+Experiência Amigável: Interface limpa, simples e responsiva, com foco em uma boa experiência de usuário.
+
+Tecnologias Usadas
+React: Biblioteca principal para a construção da interface.
+
+React Router: Gerenciamento das rotas e navegação dentro da aplicação.
+
+CSS: Para o estilo da aplicação.
+
+React Context API: Para gerenciar o estado global, como o tema (modo claro/escuro).
+Feito por Caio Hernandes.
