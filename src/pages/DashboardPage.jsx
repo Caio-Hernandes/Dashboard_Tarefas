@@ -39,7 +39,7 @@ const DashboardPage = () => {
             padding: '20px',
             borderRadius: '8px',
             backgroundColor: isDarkMode ? '#222222' : 'rgb(248, 249, 253)',
-            width: '1400px',
+            maxWidth: '1400px',
             margin: '0 auto',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           }}

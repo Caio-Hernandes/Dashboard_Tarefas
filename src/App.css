@@ -70,17 +70,39 @@ html, body {
 }
 
 .task-columns {
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .task-column {
   background: var(--task-column-bg);
-  flex: 1;
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  min-height: 200px;
-  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 70vh;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .task-columns {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .task-columns {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .task-column {
+    min-height: auto;
+    margin-bottom: 15px;
+  }
 }
 
 .task-columns > .task-column:first-child {

@@ -25,6 +25,7 @@ const Navbar = () => {
           Meu Planner
         </Link>
       </div>
+      <br/>
 
       <div className="navbar-actions">
         <button 

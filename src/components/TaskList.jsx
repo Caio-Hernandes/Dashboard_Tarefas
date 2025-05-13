@@ -141,17 +141,19 @@ const TaskList = ({ showForm, onToggleForm }) => {
       zIndex: 99,
       display: showFilters ? 'block' : 'none'
     },
-    columnsContainer: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '20px',
-      backgroundColor: isDarkMode ? '#222222' : 'rgb(248, 249, 253)',
-      padding: '20px',
-      borderRadius: '12px',
-      boxShadow: colors.shadow,
-      marginTop: '20px',
-      transition: 'all 0.3s ease'
-    },
+      columnsContainer: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(300px, 1fr))',
+    gap: '20px',
+    backgroundColor: isDarkMode ? '#222222' : 'rgb(248, 249, 253)',
+    padding: '20px',
+    borderRadius: '12px',
+    boxShadow: colors.shadow,
+    marginTop: '20px',
+    transition: 'all 0.3s ease',
+    width: '100%',
+    boxSizing: 'border-box'
+  },
     
     column: {
       backgroundColor: colors.cardBackground, 
@@ -208,7 +210,13 @@ const TaskList = ({ showForm, onToggleForm }) => {
 
       {showFilters && <div style={styles.overlay} onClick={handleOverlayClick} />}
 
-      <div style={styles.columnsContainer}>
+     <div className="task-columns" style={{
+     /* só se precisar de overrides pontuais, sem gridTemplateColumns */
+     backgroundColor: isDarkMode ? '#222' : '#f8f9fd',
+     padding: '20px',
+     gap: '20px',
+     boxSizing: 'border-box'
+   }}>
         {allOptions.statuses.map(status => {
           const tasksForStatus = tasksByStatus[status] || [];
 
